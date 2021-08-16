@@ -5,59 +5,34 @@ function main() {
   );
   header(headerContainer);
   hamburgerBarMobile();
-  //const changeTitleMenu = document.querySelector(".title--menu-mobile");
-  //changeTitleMenu.textContent = "Home";
-  //Change name elements of menu hamburger bar
-  const changeTitleMenuFirstEl = document.querySelector(
-    ".title--windows-portfolio"
-  );
-  changeTitleMenuFirstEl.textContent = "Home";
-  const changeLinkMenuFirstEl = document.querySelector(
-    ".link--windows-portfolio"
-  );
-  changeLinkMenuFirstEl.href = "./index.html";
-  const changeTitleMenuSecondEl = document.querySelector(
-    ".title--windows-servicios"
-  );
-  changeTitleMenuSecondEl.textContent = "Portfolio";
-  const changeLinkMenuSecondEl = document.querySelector(
-    ".link--windows-servicios"
-  );
-  changeLinkMenuSecondEl.href = "./portfolio.html";
-  const changeTitleMenuThirdEl = document.querySelector(
-    ".title--windows-contacto"
-  );
-  changeTitleMenuThirdEl.textContent = "Servicios";
-  const changeLinkMenuThirdEl = document.querySelector(
-    ".link--windows-contacto"
-  );
-  changeLinkMenuThirdEl.href = "./servicios.html";
 
-  const changeTitleMenuDeskFirstEl = document.querySelector(
-    ".paragraph--nav-portfolio"
-  );
+  //Modificar los nombres del menu bar
+  const firstEl = document.querySelector(".title--windows-portfolio");
+  firstEl.textContent = "Home";
+  const linkFirstEl = document.querySelector(".link--windows-portfolio");
+  linkFirstEl.href = "./index.html";
+  const secondEl = document.querySelector(".title--windows-servicios");
+  secondEl.textContent = "Portfolio";
+  const linkSecondEl = document.querySelector(".link--windows-servicios");
+  linkSecondEl.href = "./portfolio.html";
+  const thirdEl = document.querySelector(".title--windows-contacto");
+  thirdEl.textContent = "Servicios";
+  const linkThirdEl = document.querySelector(".link--windows-contacto");
+  linkThirdEl.href = "./servicios.html";
 
-  changeTitleMenuDeskFirstEl.textContent = "Home";
-  const changeLinkMenuDeskFirstEl = document.querySelector(
-    ".link--nav-portfolio"
-  );
-  changeLinkMenuDeskFirstEl.href = "./index.html";
-  const changeTitleMenuDeskSecondEl = document.querySelector(
-    ".paragraph--nav-servicios"
-  );
-  changeTitleMenuDeskSecondEl.textContent = "Portfolio";
-  const changeLinkMenuDeskSecondEl = document.querySelector(
-    ".link--nav-servicios"
-  );
-  changeLinkMenuDeskSecondEl.href = "./portfolio.html";
-  const changeTitleMenuDeskThirdEl = document.querySelector(
-    ".paragraph--nav-contacto"
-  );
-  changeTitleMenuDeskThirdEl.textContent = "Servicios";
-  const changeLinkMenuDeskThirdEl = document.querySelector(
-    ".link--nav-contacto"
-  );
-  changeLinkMenuDeskThirdEl.href = "./servicios.html";
+  const firstDeskEl = document.querySelector(".paragraph--nav-portfolio");
+
+  firstDeskEl.textContent = "Home";
+  const linkFirstDeskEl = document.querySelector(".link--nav-portfolio");
+  linkFirstDeskEl.href = "./index.html";
+  const secondDeskEl = document.querySelector(".paragraph--nav-servicios");
+  secondDeskEl.textContent = "Portfolio";
+  const linkSecondDeskEl = document.querySelector(".link--nav-servicios");
+  linkSecondDeskEl.href = "./portfolio.html";
+  const thirdDeskEl = document.querySelector(".paragraph--nav-contacto");
+  thirdDeskEl.textContent = "Servicios";
+  const linkThirdDeskEl = document.querySelector(".link--nav-contacto");
+  linkThirdDeskEl.href = "./servicios.html";
 
   document.querySelector(".subtitle").innerHTML = "";
 
