@@ -1,0 +1,250 @@
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;*/
+
+*{
+  box-sizing: border-box;
+  margin:0;
+}
+
+/*Fonts and elements*/
+.title{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color:#FFFFFF;
+}
+.subtitle{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+.paragraph{
+  font-family: 'Poppins', sans-serif;
+  font-size:16px;
+  font-weight: 400;
+  color:#FAFAFA; 
+}
+.logo{
+  height: 100%;
+  width:100%;
+}
+.link{
+  text-decoration: none;
+}
+/*HOME*/
+/*Header*/
+.header__container{
+  background-color: #000000;
+  background-image: url(./images/background.png);
+  background-size:contain;
+  height: 100vh;
+}
+@media(min-width:768px){
+  .header__container{
+    background-image:url(./images/background-desktop.png);
+    height:616px;
+    background-repeat: no-repeat;
+  }
+}
+
+/*About me*/
+.about-me{
+  padding: 55px 32px;
+  background-color: #141414;  
+}
+@media(min-width:768px){
+  .about-me{
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: end;
+  gap:50px;
+  padding-bottom: 0;
+}
+}
+@media(min-width:1024px){
+  .about-me{
+    align-items: center;
+    padding:55px 115px;
+    padding-bottom: 0;
+  }
+}
+.about-me__text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:46px;
+}
+@media(min-width:768px){
+  .about-me__text{
+    gap:24px;
+    justify-content: unset;
+    align-items: unset;
+  }
+}
+.subtitle--about-me{
+  color:#FAFAFA;
+}
+@media(min-width:768px){
+  .subtitle--about-me{
+    color:#2C2C2C;
+  }
+}
+@media(min-width:768px){
+  .paragraph--about-me{
+    color: #2C2C2C;
+    font-size: 24px;
+  }
+}
+.about-me__image{
+  display: none;
+}
+@media(min-width:768px){
+  .about-me__image{
+    display:block;
+    width:300px;
+  }
+}
+
+/*Services*/
+.services{
+  background-color: #FAFAFA;
+}
+.subtitle--services{
+  color: #2c2c2c;
+  text-align: center;
+  padding-top: 70px;
+}
+@media(min-width:768px){
+  .subtitle--services{
+    color: #2c2c2c;
+    font-size: 48px;
+    padding-top:59px;
+  }
+}
+.services__container__card{
+  padding:56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media(min-width:768px){
+  .services__container__card{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: baseline;
+    gap:100px;
+    padding:85px;
+  }
+}
+.services__card{
+  display:grid;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  gap:35px;
+}
+.services__subtitle{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #2c2c2c;
+  text-align: center;
+}
+.paragraph--services{
+  color: #2c2c2c;
+  text-align: center;
+}
+.services__card__texts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:7px;
+}
+.services__image{
+  width:138px;
+  height: 160px;
+}
+
+/*Contact*/
+.contact__container{
+  background-color: #141414;
+}
+.modal {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 300ms ease;
+}
+.modal-none {
+  display: none;
+}
+.modal-content {
+  background: white;
+  padding: 48px 32px;
+  border-radius: 10px;
+  margin: 0;
+  color: black;
+}
+.modal__text{
+  color:#2C2C2C;
+}
+
+/*Footer*/
+.footer__container{
+  background-color: #2C2C2C;
+}
+
+/*SERVICIOS*/
+.header__container--services,.services__container__card--services{
+  background-color: #000000;
+}
+@media(min-width:768px){
+  .header__container--services{
+    background-image: linear-gradient(to right, #1F1C18, #8E0E00);
+    height:654px;
+  }
+}
+.header__content--services{
+  margin-top:0;
+  padding: 40px 0;
+  text-align: center;
+}
+@media(min-width:768px){
+  .header__content--services{
+    text-align: start;
+    padding: 84px;
+  }
+}
+.services__color{
+  color:#dbdbdb;
+}
+.services__card--services{
+  margin-top:40px;
+}
+/*PORTFOLIO*/
+.services__imagen--portfolio{
+  width:190px;
+  height:119px;
+}
+.portfolio__color{
+  color: #FC6F50;
+}
+/*CONTACTO*/
+.header__container--contacto,.contact__container--contacto{
+  background-color: #000000;
+}
+@media(min-width:768px){
+  .header__container--contacto,.contact__container--contacto{
+  background-image: linear-gradient(to right, #734b6d, #42275a);
+
+  }
+}

@@ -1,0 +1,66 @@
+/*ContactForm*/
+.contact{
+
+  display: flex;
+  flex-direction: column;
+  gap:40px;
+  align-items: center;
+  padding:65px 20px;
+}
+@media(min-width:768px){
+  .contact{
+  flex-direction: row; 
+  gap: 77px;
+  align-items: unset;
+  padding: 106px;
+  justify-content: center;
+    
+  }
+}
+.subtitle--contact{
+  color:#FAFAFA;
+  text-align: center;
+}
+@media(min-width:768px){
+  .subtitle--contact{
+    font-size:48px;
+  }
+}
+.contact__form{
+  display: flex;
+  flex-direction: column;
+  max-width: 376px;
+  width: 100%;
+  gap:27px;
+}
+
+.contact__label{
+  color:#FAFAFA;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+.contact__input,.textarea__message{
+  
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  height:45px;
+  border: 3px solid #2C2C2C;
+  border-radius: 4px;
+  width: 100%;
+  
+}
+.textarea__message{
+  height: 113px;
+}
+.button{
+  background-color: #2C2C2C;
+  border-radius: 4px;
+  font-weight: 700;
+  height:45px;
+  text-align: center;
+  color: #DBDBDB;
+  width:100%;
+  margin-top: 33px;
+}
