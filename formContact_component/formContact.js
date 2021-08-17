@@ -6,11 +6,11 @@ function contactForm(el) {
       <form  class="contact__form">
         <label class="label">
           <h3 class="contact__label">NOMBRE</h3>
-          <input class="contact__input" type="text" name="name">
+          <input class="contact__input contact__input--name" type="text" name="name">
         </label>
         <label class="label">
           <h3 class="contact__label">EMAIL</h3>
-          <input class="contact__input" type="email" name="email">
+          <input class="contact__input contact__input--email" type="email" name="email">
         </label>
         <label class="label">
           <h3 class="contact__label">MENSAJE</h3>
@@ -42,13 +42,22 @@ function contactForm(el) {
     modal.classList.remove("modal-none");
     response.classList.add("modal-none");
     loader.classList.remove("modal-none");
+    const nombreEl = document
+      .querySelector(".contact__input--name")
+      .value.toString();
+    const emailEl = document
+      .querySelector(".contact__input--email")
+      .value.toString();
+    const mensajeEl = document
+      .querySelector(".textarea__message")
+      .value.toString();
 
     fetch("https://apx-api.vercel.app/api/utils/dwf", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
         to: "ariel00golubickas@gmail.com",
-        message: "Envío de mensaje del desafio módulo n°4",
+        message: `${nombreEl} ${emailEl} ${mensajeEl}`,
       }),
     })
       .then((res) => res.json())
